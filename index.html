@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorry 😭</title>
+  <link rel="stylesheet" href="Files/style.css">
+</head>
+
+<body>
+  <!-- Falling hearts layer -->
+  <div id="heart-container"></div>
+
+  <div id="container">
+
+    <!-- Screen 0: Gussa Ho??? -->
+    <div id="screen0" class="screen active">
+      <h1>Gussa ho, madam ji? 😢</h1>
+      <div class="btn-row">
+        <button class="primary" onclick="showScreen(1)">Haan, gussa hoon 😠</button>
+        <button class="no-btn" onclick="goToThankYou()">Nahi, my sweetheart ❤️</button>
+      </div>
+    </div>
+
+    <!-- Screen 1 -->
+    <div id="screen1" class="screen">
+      <h2>Princess, I am really sorry... please maaf kardo 🥺</h2>
+      <div class="btn-row">
+        <button class="primary" onclick="goToThankYou()">Thik hai, maaf kiya ❤️</button>
+        <button class="no-btn" onclick="showScreen(2)">Maaf nahi kiya</button>
+      </div>
+    </div>
+
+    <!-- Screen 2 -->
+    <div id="screen2" class="screen">
+      <h2>Sorry naa, madam ji... please maaf kardo 🥺</h2>
+      <div class="btn-row">
+        <button class="primary" onclick="goToThankYou()">Thik hai, maaf kiya ❤️</button>
+        <button class="small no-btn" onclick="showScreen(3)">Abhi nahi</button>
+      </div>
+    </div>
+
+    <!-- Screen 3 with RUN AWAY BUTTON -->
+    <div id="screen3" class="screen">
+      <h2>Princess, please maaf kardo naa 😭😭😭</h2>
+      <div class="btn-row" id="noRow">
+        <button class="primary" onclick="goToThankYou()">Thik hai maaf kiya ❤️</button>
+        <button id="noBtn" class="no-btn">Nooo 😈</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="Files/script.js"></script>
+</body>
+</html>
